@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INNICIA</title>
+    <link rel="stylesheet" href="olemicss.css">
+  </head>
+
+<body style="background-color: #e7e5e4;">
+
+
+  <header>
+    <section class="wrapper">
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Casas</a></li>
+          <li><a href="#">Pisos</a></li>
+          <li><a href="#">Habitaciones</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+      </section>
+  </header>
+
+
+  <div id="INNICIA" style="width: 100%;">
+    <p class="elegantshadow">INNICIA</p>
+  </div>
+
+
+
+  <div>
+    <form id="form">
+        <input id=input type="search" name="search" placeholder="Search..">
+    </form>
+  </div>
+
+  <hr id="hr">
+
+
+
+
+<!-- ANUNCIO1 -->
+  <div class="tabla">
+    
+    <div><h3>Casa adosada de alquiler en El Faro de Calaburra - Chaparral</h3></div>
+
+    <!-- columna1 -->
+    <div>
+      <div class="columna1"> 
+      <h1 style="color: #387086;">1.250€ 
+        <span style="font-size: 22px;">/mes</span>
+        <span id="precio" style="padding-left: 15px;">Ha bajado de precio 50€</span>
+      </h1>
+
+      <div class="iconos">
+        <img style="max-width: 40px; height: auto;" src="iconos/cama_icon.png" alt="Imagen no disponible">
+        <span>2 Habitaciones</span>
+      </div>
+
+      <div class="iconos">
+        <img style="max-width: 30px; height: auto;" src="iconos/baño_icon.png" alt="Imagen no disponible">
+        <span>3 Baños</span>
+      </div>
+
+      <div class="iconos">
+        <img style="max-width: 30px; height: auto;" src="iconos/metros_icon.png" alt="Imagen no disponible">
+        <span>204 m²</span>
+      </div>
+
+
+      <p id="info">Pareado de 2 plantas, actualmente de 2 dormitorios con 2 baños en suite (posible 3 dormitorios). Cuando entras a la vivienda encuentras la entrada con un aseo a la derecha y a la izquierda una cocina muy amplia, luminosa y equipada, unido a través de un arco con el salón-comedor. El salón comedor es también amplío y esta conectado con la terraza con 2 puertas/ventanas grandes que dejan entrar mucha luz y ofrecen vistas preciosas. La terraza tiene vistas espectaculares al mar, campo de golf, a la piscina y a las zonas verdes, transmite mucha tranquilidad y paz. La terraza es ideal para disfrutar de barbacoas con familia y amigos. En el salón hay una escalera a la planta baja, donde se encuentran los dos dormitorios en suite, ambos con armarios empotrados. Uno de los dormitorios fue habilitado como apartamento privado, para poder vivir o alquilar, tiene su propia cocina y acceso a la terraza y piscina comunitaria. La piscina solo se comparte con otras 5 casas más, por lo cual es muy tranquila y privada. No dudes en visitarlo, la casa tiene muchas posibilidades y te verás viviendo allí!</p>
+
+
+    </div>
+
+
+    <!-- columna2 -->
+    <div class="columna2">
+      
+      <div class="slideshow-container">
+
+        <div class="mySlides fade" id="myCarousel1">
+          <div class="numbertext">1 / 5</div>
+          <img id="image" src="casa1/cocina_casa1.jpg" style="width:100%">
+          <div class="text">Cocina</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img id="image" src="casa1/exterior_casa1.jpg" style="width:100%">
+          <div class="text">Exterior</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img id="image" src="casa1/habitacion2_casa1.jpg" style="width:100%">
+          <div class="text">Habitaciones</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 5</div>
+          <img id="image" src="casa1/habitacion_casa1.jpg" style="width:100%">
+          <div class="text">Habitaciones</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+          <img  id="image"src="casa1/terraza_casa1.jpg" style="width:100%">
+          <div class="text">Terraza</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+      
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+      </script>
+      
+    </div>
+    </div>
+
+    </div>
+
+<!-- PARTE GRIS -->
+    <div id="inmo_table">
+      <div class="inmo_cell" id="anunciante">
+        Anunciante
+        <hr style="margin-top: 4px;">
+        <br>
+        <h3 style="font-size: 20px;">ACAPULCO CENTRO INMOBILIARIA</h3>
+        <br>
+        <br>
+        Teléfono
+        <hr style="margin-top: 4px;">
+        <h3 style="font-size: 20px;">951 985 892</h3>
+
+      </div>
+
+     
+
+      <div class="inmo_cell">
+        <img id="mapa" src="mapas/mapa1.JPG" alt="mapa no disponible">
+        
+        
+        <div class="inmo_cell" id="anunciante">
+          Dirección de domicilio
+          <hr style="margin-top: 4px;">
+          <br>
+          <h3 style="font-size: 20px;"> Bulevar de Louis Pasteur, nº 24. Ciudad Universitaria, Teatinos-Universidad (Málaga Capital)</h3>
+          <br>
+          Fecha de publicación
+          <hr style="margin-top: 4px;">
+          <h3 style="font-size: 20px;">09/08/2020</h3>
+  
+        </div>  
+
+      </div>
+    </div>
+
+
+
+
+
+<!-- ANUNCIO2 -->
+    <div style="padding-top: 50px;">
+      <hr id="hr">
+
+      <div class="tabla">
+    
+      <div><h3>Casa adosada de alquiler en Nagüeles Alto</h3></div>
+
+    <!-- columna1 -->
+    <div>
+      <div class="columna1"> 
+      <h1 style="color: #387086;">2.500€
+        <span style="font-size: 22px;">/mes</span>
+        <!-- <span id="precio" style="padding-left: 15px;">Ha bajado de precio 50€</span> -->
+      </h1>
+
+      <div class="iconos">
+        <img style="max-width: 40px; height: auto;" src="iconos/cama_icon.png" alt="Imagen no disponible">
+        <span>4 Habitaciones</span>
+      </div>
+
+      <div class="iconos">
+        <img style="max-width: 30px; height: auto;" src="iconos/baño_icon.png" alt="Imagen no disponible">
+        <span>4 Baños</span>
+      </div>
+
+      <div class="iconos">
+        <img style="max-width: 30px; height: auto;" src="iconos/metros_icon.png" alt="Imagen no disponible">
+        <span>320 m²</span>
+      </div>
+
+
+      <p id="info">Preciosa adosada perfectamente ubicada en Nagueles alto a tan sólo 5 minutos de conducir hasta la playa, al centro y a Puerto Banus. La casa es un aesquina, tiene orientacion a suroeste y cuenta con 4 dormitorios y 3 baños mas 1 aseo de invitados.
+        <br> Planta baja: salón amplio con acceso a la terraza con vistas al jardín, cocina intepensiente, aseo de invitados.
+        <br> Planta primera: 3 dormitorios y 2 baños. El dormitorios principal con acceso a la terraza y baño en suite.
+        <br> Planta ultima: solarium con zona de barbacoa, jacuzzi, vistas preciosas a la montaña
+        <br> Planta sótano (tiene luz natural y acceso al jardín. ) Dormitorio de invitados, sala para juegos, garaje, cuarto de baño.
+        <br> Suelos radiantes en los baños, aire acondicionado, ascensor.
+      </p>
+
+    </div>
+
+
+    <!-- columna2 -->
+    <div class="columna2">
+      
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img id="image" src="casa2/salon_casa2.jpg" style="width:100%">
+          <div class="text">Salón</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img id="image" src="casa2/cocina_salon2.jpg" style="width:100%">
+          <div class="text">Cocina</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img id="image" src="casa2/dormitorio1_casa2.jpg" style="width:100%">
+          <div class="text">Habitación</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 5</div>
+          <img id="image" src="casa2/dormitorio2_casa2.jpg" style="width:100%">
+          <div class="text">Habitación</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+          <img  id="image" src="casa2/baño_casa2.jpg" style="width:100%">
+          <div class="text">Baño</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+      
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides2");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+      </script>
+      
+    </div>
+    </div>
+
+    </div>
+
+<!-- PARTE GRIS -->
+    <div id="inmo_table">
+      <div class="inmo_cell" id="anunciante">
+        Anunciante
+        <hr style="margin-top: 4px;">
+        <br>
+        <h3 style="font-size: 20px;">KATRIN ESTATES</h3>
+        <br>
+        <br>
+        Teléfono
+        <hr style="margin-top: 4px;">
+        <h3 style="font-size: 20px;">951 344 313</h3>
+
+      </div>
+
+     
+
+      <div class="inmo_cell">
+        <img id="mapa" src="mapas/mapa2.JPG" alt="mapa no disponible">
+        
+        
+        <div class="inmo_cell" id="anunciante">
+          Dirección de domicilio
+          <hr style="margin-top: 4px;">
+          <br>
+          <h3 style="font-size: 20px;"> Calle de Juan Larrea. <br> El Palo, Este <br> (Málaga Capital)</h3>
+          <br>
+          Fecha de publicación
+          <hr style="margin-top: 4px;">
+          <h3 style="font-size: 20px;">17/10/2020</h3>
+  
+        </div> 
+
+      </div>     
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- ANUNCIO3 -->
+    <div style="padding-top: 50px;">
+      <hr id="hr">
+
+     <div class="tabla">
+    
+     <div><h3>Piso de alquiler en Plutarco, 14 El Cónsul - Ciudad Universitaria</h3></div>
+
+    <!-- columna1 -->
+    <div>
+      <div class="columna1"> 
+      <h1 style="color: #387086;">800€
+        <span style="font-size: 22px;">/mes</span>
+        <span id="precio" style="padding-left: 15px;">Ha bajado de precio 25€</span>
+      </h1>
+
+      <div class="iconos">
+        <img style="max-width: 40px; height: auto;" src="iconos/cama_icon.png" alt="Imagen no disponible">
+        <span>3 Habitaciones</span>
+      </div>
+
+      <div class="iconos">
+        <img style="max-width: 30px; height: auto;" src="iconos/baño_icon.png" alt="Imagen no disponible">
+        <span>2 Baños</span>
+      </div>
+
+      <div class="iconos">
+        <img style="max-width: 30px; height: auto;" src="iconos/metros_icon.png" alt="Imagen no disponible">
+        <span>110 m²</span>
+      </div>
+
+
+      <p id="info">
+        Si lo que buscas es un piso amplio para vivir, éste lo es. <br>
+        <br> - Consta de 3 dormitorios, todos ellos con armarios empotrados, luminosos y exteriores.
+        <br> - La cocina es amplia, dispone de lavadero y también muy luminosa.
+        <br> - El salón dispone de una gran terraza con cierre de cristalera, lo que permite poder usarla tanto en invierno como en verano. 
+        <br> - La vivienda se ubica en la urbanización de Alcazaba, en el centro de El Romeral, dispone de piscinas, pistas de paddel y zonas de juegos para niños. Está junto al Hospital Clínico, Universidad....además de tener cerca los servicios básicos de supermercados, bus, colegios, metro, etc.. 
+        <br><br> HONORARIOS DE AGENCIA: UNA MENSUALIDAD A CARGO DEL INQUILINO
+      </p>
+
+
+    </div>
+
+
+    <!-- columna2 -->
+    <div class="columna2">
+      
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img id="image" src="piso1/salon_piso1.jpg" style="width:100%">
+          <div class="text">Salón</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img id="image" src="piso1/cocina_piso1.jpg" style="width:100%">
+          <div class="text">Cocina</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img id="image" src="piso1/dormitorio1_piso1.jpg" style="width:100%">
+          <div class="text">Habitación</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 5</div>
+          <img id="image" src="piso1/dormitorio2_piso1.jpg" style="width:100%">
+          <div class="text">Habitación</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+          <img  id="image" src="piso1/baño_piso1.jpg" style="width:100%">
+          <div class="text">Baño</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides3");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+      </script>
+    
+      
+    </div>
+    </div>
+
+    </div>
+
+  <!-- PARTE GRIS -->
+    <div id="inmo_table">
+      <div class="inmo_cell" id="anunciante">
+        Anunciante
+        <hr style="margin-top: 4px;">
+        <br>
+        <h3 style="font-size: 20px;">INMOTEATINOS</h3>
+        <br>
+        <br>
+        Teléfono
+        <hr style="margin-top: 4px;">
+        <h3 style=  "font-size: 20px;">952 146 574</h3>
+
+      </div>  
+
+      
+
+      <div class="inmo_cell">
+        <img id="mapa" src="mapas/mapa3.JPG" alt="mapa no disponible">
+
+        
+        <div class="inmo_cell" id="anunciante">
+          Dirección de domicilio
+          <hr style="margin-top: 4px;">
+          <br>
+          <h3 style="font-size: 20px;"> Plutarco, 14 El Cónsul - Ciudad Universitaria <br> (Málaga Capital)</h3>
+          <br>
+          Fecha de publicación
+          <hr style="margin-top: 4px;">
+          <h3 style="font-size: 20px;">13/09/2020</h3>
+
+        </div>
+
+      </div>     
+    </div>
+    </div>
+
+
+
+
+
+    <!-- ANUNCIO4 -->
+    <div style="padding-top: 50px;">
+      <hr id="hr">
+
+     <div class="tabla">
+    
+     <div><h3>Piso de alquiler en Teatinos</h3></div>
+
+    <!-- columna1 -->
+    <div>
+      <div class="columna1"> 
+      <h1 style="color: #387086;">600€
+        <span style="font-size: 22px;">/mes</span>
+        <span id="precio" style="padding-left: 15px;">Ha bajado de precio 100€</span>
+      </h1>
+
+      <div class="iconos">
+        <img style="max-width: 40px; height: auto;" src="iconos/cama_icon.png" alt="Imagen no disponible">
+        <span>2 Habitaciones</span>
+      </div>
+
+      <div class="iconos">
+        <img style="max-width: 30px; height: auto;" src="iconos/baño_icon.png" alt="Imagen no disponible">
+        <span>1 Baños</span>
+      </div>
+
+      <div class="iconos">
+        <img style="max-width: 30px; height: auto;" src="iconos/metros_icon.png" alt="Imagen no disponible">
+        <span>60 m²</span>
+      </div>
+
+
+      <p id="info">
+        <b>Se alquila coqueto piso ubicado en Teatinos, en la zona de Colonia de Santa Inés.</b> <br>
+        <br> La vivienda consta de dos dormitorios, salón comedor , baño completo, cocina independiente equipada con todos sus electrodomésticos y patio. También consta dos dos bombas frió/calor, una ubicada en el salón y otra en el dormitorio principal.
+        <br> Se entrega completamente amueblada.
+        <br> Se encuentra rodeada de todo tipo de comercios y servicios como universidades, hospitales, paradas de metro y bus, supermercados etc y todo esto a un paso de la Ciudad de la Justicia.
+        ¡Si quiere vivir en una vivienda decorada con gusto y en una de las mejores zonas de Málaga no dude en llamarnos y le acompañaremos a visitar este precioso piso!
+      </p>
+
+
+    </div>
+
+
+    <!-- columna2 -->
+    <div class="columna2">
+      
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img id="image" src="piso2/salon_piso2.jpg" style="width:100%">
+          <div class="text">Salón</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img id="image" src="piso2/cocina_piso2.jpg" style="width:100%">
+          <div class="text">Cocina</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img id="image" src="piso2/dormitorio_piso2.jpg" style="width:100%">
+          <div class="text">Habitación</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 5</div>
+          <img id="image" src="piso2/dormitorio2_piso2.jpg" style="width:100%">
+          <div class="text">Habitación</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+          <img  id="image" src="piso2/baño_piso2.jpg" style="width:100%">
+          <div class="text">Baño</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+      </script>
+    
+      
+    </div>
+    </div>
+
+    </div>
+
+  <!-- PARTE GRIS -->
+    <div id="inmo_table">
+      <div class="inmo_cell" id="anunciante">
+        Anunciante
+        <hr style="margin-top: 4px;">
+        <br>
+        <h3 style="font-size: 20px;">BANKASA MALAGA GRUPO INMOBILIARIO</h3>
+        <br>
+        <br>
+        Teléfono
+        <hr style="margin-top: 4px;">
+        <h3 style=  "font-size: 20px;">952 947 238</h3>
+
+      </div>  
+
+      
+
+      <div class="inmo_cell">
+        <img id="mapa" src="mapas/mapa4.JPG" alt="mapa no disponible">
+
+        
+        <div class="inmo_cell" id="anunciante">
+          Dirección de domicilio
+          <hr style="margin-top: 4px;">
+          <br>
+          <h3 style="font-size: 20px;">Calle las morillas, 32 <br> Las Morillas - Teatinos <br> (Málaga Capital)</h3>
+          <br>
+          Fecha de publicación
+          <hr style="margin-top: 4px;">
+          <h3 style="font-size: 20px;">29/12/2020</h3>
+
+        </div>
+
+      </div>     
+    </div>
+    </div>
+
+
+
+    <!-- ANUNCIO5 -->
+    <div style="padding-top: 50px;">
+      <hr id="hr">
+
+     <div class="tabla">
+    
+     <div><h3>Piso para compartir en La Unión - Cruz de Humilladero - Los Tilos</h3></div>
+
+    <!-- columna1 -->
+    <div>
+      <div class="columna1"> 
+      <h1 style="color: #387086;">350€
+        <span style="font-size: 22px;">/mes</span>
+        <!-- <span id="precio" style="padding-left: 15px;">Ha bajado de precio 100€</span> -->
+      </h1>
+
+      <div class="iconos">
+        <img style="max-width: 40px; height: auto;" src="iconos/cama_icon.png" alt="Imagen no disponible">
+        <span>3 Habitaciones</span>
+      </div>
+
+      <div class="iconos">
+        <img style="max-width: 30px; height: auto;" src="iconos/baño_icon.png" alt="Imagen no disponible">
+        <span>2 Baños</span>
+      </div>
+
+      <div class="iconos">
+        <img style="max-width: 30px; height: auto;" src="iconos/metros_icon.png" alt="Imagen no disponible">
+        <span>114 m²</span>
+      </div>
+
+
+      <p id="info">
+        <b>Moderna habitación en piso compartido a estrenar.</b> <br> 
+        La habitación tiene cama de matrimonio, gran armario, cómoda y mesa de escritorio de cristal. <br>
+        El piso incluye una gran cocina y gran salón con terraza. <br>
+        El baño sería compartido con otra persona más. El precio incluye gastos de agua, luz e Internet. No se permiten parejas, ni animales ni fumadores. <br> 
+        <b>Preferencia entre 24-30 años.</b> 
+      </p>
+
+
+    </div>
+
+
+    <!-- columna2 -->
+    <div class="columna2">
+      
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img id="image" src="habitacion1/salon_hab1.jpg" style="width:100%">
+          <div class="text">Salón</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img id="image" src="habitacion1/habitacion1_hab1.jpg" style="width:100%">
+          <div class="text">Habitación</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img id="image" src="habitacion1/terraza_hab1.jpg" style="width:100%">
+          <div class="text">Terraza</div>
+        </div>
+
+        <!-- <div class="mySlides fade">
+          <div class="numbertext">4 / 5</div>
+          <img id="image" src="piso2/dormitorio2_piso2.jpg" style="width:100%">
+          <div class="text">Habitación</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+          <img  id="image" src="piso2/baño_piso2.jpg" style="width:100%">
+          <div class="text">Baño</div>
+        </div> -->
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+      </script>
+    
+      
+    </div>
+    </div>
+
+    </div>
+
+  <!-- PARTE GRIS -->
+    <div id="inmo_table">
+      <div class="inmo_cell" id="anunciante">
+        Anunciante
+        <hr style="margin-top: 4px;">
+        <br>
+        <h3 style="font-size: 20px;">PARTICULAR: <br> Yaiza</h3>
+        <br>
+        <br>
+        Teléfono
+        <hr style="margin-top: 4px;">
+        <h3 style=  "font-size: 20px;">694 292 504</h3>
+
+      </div>  
+
+      
+
+      <div class="inmo_cell">
+        <img id="mapa" src="mapas/mapa5.JPG" alt="mapa no disponible">
+
+        
+        <div class="inmo_cell" id="anunciante">
+          Dirección de domicilio
+          <hr style="margin-top: 4px;">
+          <br>
+          <h3 style="font-size: 20px;">Calle Mauricio Moro Pareto, 31 <br> La Unión - Cruz del Humilladero <br> (Málaga Capital)</h3>
+          <br>
+          Fecha de publicación
+          <hr style="margin-top: 4px;">
+          <h3 style="font-size: 20px;">20/11/2020</h3>
+
+        </div>
+
+      </div>     
+    </div>
+    </div>
+
+
+        <!-- ANUNCIO6 -->
+        <div style="padding-top: 50px;">
+          <hr id="hr">
+    
+         <div class="tabla">
+        
+         <div><h3>Piso para compartir en Portada Alta - Pol. Crta. De Cártama</h3></div>
+    
+        <!-- columna1 -->
+        <div>
+          <div class="columna1"> 
+          <h1 style="color: #387086;">300€
+            <span style="font-size: 22px;">/mes</span>
+            <span id="precio" style="padding-left: 15px;">Ha bajado de precio 15€</span>
+          </h1>
+    
+          <div class="iconos">
+            <img style="max-width: 40px; height: auto;" src="iconos/cama_icon.png" alt="Imagen no disponible">
+            <span>3 Habitaciones</span>
+          </div>
+    
+          <div class="iconos">
+            <img style="max-width: 30px; height: auto;" src="iconos/baño_icon.png" alt="Imagen no disponible">
+            <span>1 Baños</span>
+          </div>
+    
+          <div class="iconos">
+            <img style="max-width: 30px; height: auto;" src="iconos/metros_icon.png" alt="Imagen no disponible">
+            <span>80 m²</span>
+          </div>
+    
+    
+          <p id="info">
+           <b>AMPLIA HABITACIÓN AIRE ACONDICIONADO POR CUBRIR: 315 €</b> <br>
+           <br> TODO INCLUIDO (LUZ, AGUA E INTERNET Y LIMPIEZA UNA VEZ SEMANA ZONAS COMUNES).
+           <br> En tranquilo en Avenida José Ortega y Gasset, a pocos metros del metro de Barbarela y de la Comisaría Provincial de Málaga. 
+           <br> Es una zona con todo tipo de comercios, restaurantes, zonas de ocio, colegios, etc...
+           <br><br> <i>Queda disponible una amplia habitación con aire acondicionado en esta vivienda de 80 m2, con cocina completamente equipada, baño y amplio salón comedor. Zona muy tranquila. TODO INCLUIDO. SOL-652. www.alquilofacil.es</i> 
+          </p>
+    
+    
+        </div>
+    
+    
+        <!-- columna2 -->
+        <div class="columna2">
+          
+          <div class="slideshow-container">
+    
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 4</div>
+              <img id="image" src="habitacion2/salon_hab2.jpg" style="width:100%">
+              <div class="text">Salón</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 4</div>
+              <img id="image" src="habitacion2/cocina_hab2.jpg" style="width:100%">
+              <div class="text">Cocina</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 4</div>
+              <img id="image" src="habitacion2/habitacion_hab2.jpg" style="width:100%">
+              <div class="text">Habitación</div>
+            </div>
+    
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 4</div>
+              <img id="image" src="habitacion2/habitacion2_hab2.jpg" style="width:100%">
+              <div class="text">Habitación</div>
+            </div>
+    
+            <!-- <div class="mySlides fade">
+              <div class="numbertext">5 / 5</div>
+              <img  id="image" src="piso2/baño_piso2.jpg" style="width:100%">
+              <div class="text">Baño</div>
+            </div> -->
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+          </div>
+          <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+          </script>
+        
+          
+        </div>
+        </div>
+    
+        </div>
+    
+      <!-- PARTE GRIS -->
+        <div id="inmo_table">
+          <div class="inmo_cell" id="anunciante">
+            Anunciante
+            <hr style="margin-top: 4px;">
+            <br>
+            <h3 style="font-size: 20px;">ALQUILO FACIL MÁLAGA</h3>
+            <br>
+            <br>
+            Teléfono
+            <hr style="margin-top: 4px;">
+            <h3 style=  "font-size: 20px;">951 986 839</h3>
+    
+          </div>  
+    
+          
+    
+          <div class="inmo_cell">
+            <img id="mapa" src="mapas/mapa6.JPG" alt="mapa no disponible">
+    
+            
+            <div class="inmo_cell" id="anunciante">
+              Dirección de domicilio
+              <hr style="margin-top: 4px;">
+              <br>
+              <h3 style="font-size: 20px;">Calle Virgen del Pilar, 16 <br> Portada Alta - Pol. Crta. De Cártama <br> (Málaga Capital)</h3>
+              <br>
+              Fecha de publicación
+              <hr style="margin-top: 4px;">
+              <h3 style="font-size: 20px;">9/1/2021</h3>
+    
+            </div>
+    
+          </div>     
+        </div>
+        </div>
+
+
+        <hr id="hr">
+
+        <div id="footer">
+          <div class="footer_table">
+            <div class="footer_cell">
+              <h3>
+                Francisco del Arco Montes
+              </h3>
+              <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+</body>
+</html>
